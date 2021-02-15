@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;355&display=swap');/*font-family: 'Josefin Sans', sans-serif; 中文bio*/
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');/*font-family: 'Philosopher', sans-serif; table*/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap'); /*font-family: 'Satisfy', cursive; welcome*/
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); /*font-family: 'Kalam', cursive; motto*/
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css'); /*font-family: ‘cwTeXFangSong’, serif;*//*是否因為html設定英文而不行?*/
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');/*font-family: 'Special Elite', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); /*font-family: 'EB Garamond', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap'); /*font-family: 'Crimson Text', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /*font-family: 'Lobster', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap'); /*font-family: 'Amatic SC', cursive;*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+
+body {
+    height:313vh;
+	width: 100%;
+	background-color: #202121;/*blue#5d84b0*//*beige#d9d6b2*/ /*right black: #202121*/
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+	width:100vw;
+	height: 100vh;
+}
+
+
+
+header > img {
+	display: block;
+	position:relative;
+	top:0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    opacity: 65%;
+}
+
+
+div.toptable{
+	background-color: white;/*#7151db*/
+	opacity: 60%;
+	width:100vw;
+	height:50px; /*50px*/
+	position:fixed;
+	top:0px;
+	z-index: 10;
+
+
+}
+
+/*z-index*/
+header > nav {		/*background-color: #d9d4c7;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	opacity:100%;
+	width:100vw;
+	height:50px; /*50px*/
+	position:fixed;
+	top:0px;
+	font-size:25px;
+	font-family: 'Philosopher', sans-serif;
+    z-index: 10;
+}
+
+/*about*/
+nav a:nth-of-type(1) {/*transition: background-position 0.5s ease-in-out;*/
+
+	display:inline-block;
+	text-decoration:none;
+	height:50px;/*necessary?*/
+	padding:10px;
+	margin: 0 10px;
+	color:white;
+
+}
+
+/*contact*/
+nav a:nth-of-type(2) {/*transition: background-position 0.5s ease-in-out;*/
+	
+	display:inline-block;
+	text-decoration:none;
+	height:50px;/*necessary?*/
+	padding:10px;
+	margin: 0 10px;
+	color:white;
+
+}
+
+/*explore*/
+div#dropdown-menu {
+	height:50px;/*necessary?*/
+	margin:0 px;
+	text-align:center;
+	color:white;
+
+}
+/*字Explore*/
+nav > div:nth-child(2) > span {
+	display:block;
+	height:50px;
+	padding:10px;
+	margin: 0 3px;
+
+}
+
+div#dropdown-menu > a {
+	display:block;
+	display:none;
+	padding:10px;
+	height:50px;
+	margin:0 -0.5px;
+	color: white;
+	background-color:#363a40;
+	text-decoration: none;
+	position:relative;
+	
+}
+
+
+
+/*-------hover---------------------------------------------------------------------------------------------------------------*/
+
+
+nav a:nth-of-type(1):hover {
+	background-color:#3e444d;
+}
+
+nav:hover a:nth-of-type(1) {
+transition: .5s ease-in-out;
+}
+
+nav a:nth-of-type(2):hover {
+	background-color:#3e444d;
+}
+
+nav:hover a:nth-of-type(2) {
+transition: .5s ease-in-out;
+}
+
+nav div#dropdown-menu:hover {
+	background-color:#3e444d;
+	transition: .5s ease-in-out;	
+}
+
+div#dropdown-menu:hover > a { /*#a9adc1*/
+	display:block;
+	background-color:#3e444d;
+	transition: .5s ease-in-out;
+}
+
+div#dropdown-menu > a:hover { /*#a9adc1*/
+	display:block;
+	background-color:#a9adc1;
+	transition: .5s ease-in-out;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+span.alan {
+	display:block;
+	width:400px;
+	color: #efc992;
+	font-size:9vw;
+	font-family: 'Amatic SC', cursive;/*font-family: 'Satisfy', cursive;*/
+	position: relative;
+	top: -1205px; 
+	left: 38.5%;
+	z-index: 0;
+}
+
+/*Home頭像*/
+header > img:nth-of-type(2) {
+	display:block;
+	position: relative;
+	top:-69%;
+	left:37%;
+	height: 370px;
+	width: 370px;
+	border-radius:50%;
+	z-index: 1;
+	opacity: 1;
+}
+
+span.welcome {
+	display:block;
+	color: #cec8bf;
+	font-size: 2.5vw;
+	font-family: 'Satisfy', cursive;
+	width: 21vw;
+	position: relative;
+	top: -810px; 
+	left:39%;/*40.5%*/
+	/*left: -700px;*/
+	z-index: 0;
+
+}
+
+/*-------------me_eng、ch---------------------------------------------------------------------------------------------------*/
+
+a.me_eng  { 
+	display: inline-block;
+	position: relative;
+	top:-515px;
+	left:445px;
+	text-align: center;	
+	text-decoration: none;
+	height:145px;
+	line-height:145px;
+    color:black;
+	z-index: 0;
+	opacity:85%;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 72.5px 0 72.5px 145px;
+    border-color: transparent transparent transparent #d28b3b;
+}
+
+a.me_eng > span {
+	display:inline-block;
+	position:relative;
+	left: -140px;
+	top:-78px;
+	width: 10px;
+	font-size: 40px;
+	font-family: 'Philosopher', sans-serif;
+	color: white;
+	/*transform: rotate(45deg);*/
+}
+
+/*font-family: ‘cwTeXFangSong’, serif;*/
+a.me_ch  {
+	display: inline-block;
+	position: relative;
+	top:-515px;
+	left:780px;
+	text-align: center;	
+	text-decoration: none;
+	height:145px;
+	line-height:145px;
+	width: 145px;
+    /*border-radius: 50%;*/
+    /*background-color:#d28b3b;*/
+    color:black;
+	font-size: 30px;
+	z-index: 0;
+	opacity:85%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 72.5px 145px 72.5px 0;
+	border-color: transparent #d28b3b transparent transparent;
+	
+
+	
+}
+
+a.me_ch > span {
+	display:inline-block;
+	position:relative;
+	left: 100px;
+	top:-70px;
+	width: 10px;
+	font-size: 40px;
+	font-family: FangSong;
+	color: white;
+}
+
+
+/*----hover-----*/
+a.me_eng:hover {
+	/*background-color:#e2bf8a;*/
+	opacity: 70%;
+	transform: scale(1.1);
+	transition: .5s ease-in-out;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 72.5px 0 72.5px 145px;
+    border-color: transparent transparent transparent #d28b3b;
+
+}
+
+a.me_ch:hover {
+	/*background-color:#e2bf8a;*/
+	opacity: 70%;
+	transform: scale(1.1);
+	transition: .5s ease-in-out;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 72.5px 145px 72.5px 0;
+    border-color: transparent #d28b3b transparent transparent;
+
+}
+
+
+
+/*__________________________________________________________________________________________________________________________________________________________________*/
+
+/*bio背景圖片1*/
+body > img:nth-of-type(1) {
+	display: block;
+	position:relative;
+	top:0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    opacity: 65%;
+}
+
+/*bio背景圖片2*/
+body > img:nth-of-type(2) {
+	display: block;
+	position:relative;
+	top:0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    opacity: 65%;
+}
+
+/*bio我照片1*/
+body > img:nth-of-type(3) {
+	display: block;
+	position:relative;
+	top:-1220px;
+	left:1115px;
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+    opacity: 100%;
+    border-radius:50%;
+}
+
+/*bio我照片2*/
+body > img:nth-of-type(4) {
+	display: block;
+	position:relative;
+	top:-880px;
+	left: 55px;
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+    opacity: 100%;
+    /*border-radius:50%;*/
+}
+
+div#bio {
+	position:relative;
+	top:-300vh;
+	padding: 30px 30px;
+	height: 190vh;
+
+}
+
+
+article#engbio {
+	display:block;
+	position:relative;
+	top:95px;
+	width: 60vw;
+	height:72vh;
+	margin:10px 10px;
+	padding: 15px 10px 10px 15px; 
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2.5vh;
+	/*letter-spacing: 1.5px;*/
+	line-height: 30px;
+    z-index: 1;
+    color: white;
+    text-align: justify;
+    text-justify:inter-ideograph;
+}
+
+article#engbio> h1 {
+	position:relative;
+	top: -60px;
+	font-size: 10vh;
+
+}
+
+
+article#chbio {
+	display:block;
+	position:relative;
+	top:440px;
+	left: 400px;
+	width: 1000px;
+	height:260px;
+	margin:5px 5px;
+	padding: 15px 10px 10px 15px; 
+	font-family: FangSong;
+	font-size: 2.7vh;
+	line-height: 30px;
+    z-index: 1;
+    color: white;
+    text-align: justify;
+    text-justify:inter-ideograph;
+}
+
+
+
+article#chbio> h1 {
+	position:relative;
+	top: -55px;
+	left: 665px;
+	font-size:15vh;
+
+}
+
+
+footer {
+	height: 29vh;
+	position: relative;
+	top:-287vh; /*-287vh*/
+	z-index: 10;
+	font-family: 'Philosopher', sans-serif;
+	color: white; 
+}
+
+footer > span:nth-of-type(1) {
+	display: inline-block;
+	position: relative;
+	top:-7vh;
+	left: 30vw;
+	width:200px;
+	height: 200px;
+	font-size:3vw;
+}
+
+footer > span:nth-of-type(2) {
+	display: inline-block;
+	position: relative;
+	top:-7vh;
+	left: 28vw;
+	width:200px;
+	height: 200px;
+	font-size:2.5vw;
+}
+
+footer > span:nth-of-type(3) {
+	display: inline-block;
+	position: relative;
+	top: 10vh;
+	left: -1vw;
+	width:200px;
+	height: 200px;
+	font-size:3vw;
+}
+
+footer > span:nth-of-type(4) {
+	display: inline-block;
+	position: relative;
+	top:10vh;
+	left: 1.5vw;
+	width:200px;
+	height: 200px;
+	font-size:2.5vw;
+}
